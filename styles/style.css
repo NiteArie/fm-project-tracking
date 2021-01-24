@@ -48,6 +48,7 @@ body::after {
 }
 
 .header__nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,6 +80,14 @@ body::after {
     list-style: disc;
     padding-left: 20px;
     color: hsl(231, 7%, 65%);
+}
+
+.header__item--menu {
+    cursor: pointer;
+}
+
+.header__menu {
+    display: none;
 }
 
 /* Hero */
@@ -167,6 +176,10 @@ body::after {
     color: hsl(228, 45%, 44%);
 }
 
+.hidden {
+    display: none;
+}
+
 @media all and (max-width: 1080px) {
     body::after {
         top: 0;
@@ -188,6 +201,35 @@ body::after {
 @media all and (max-width: 750px) {
     body {
         padding: 40px;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .header__list {
+        display: none;
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        left: 50%;
+        transform: translate(-50%, 70%);
+    }
+
+    .header__item {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .header__item--menu {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header__item--dim {
+        border-top: 1px solid hsl(231, 7%, 65%);
+        list-style: none;
     }
 
     .hero {
