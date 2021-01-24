@@ -1,5 +1,9 @@
 # fm-project-tracking (Project Tracking Component)
 
+## Live
+
+Live Preview: [https://nitearie.github.io/fm-project-tracking/](https://nitearie.github.io/fm-project-tracking/)
+
 ## Design 
 
 > Desktop
