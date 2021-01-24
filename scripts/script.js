@@ -17,15 +17,15 @@ const app = (() => {
     })
 
     function openMenuIcon() {
-        _headerMenuPic.setAttribute("src", "../images/icon-close.svg");
+        _headerMenuPic.setAttribute("src", "images/icon-close.svg");
     }
 
     function closeMenuIcon() {
-        _headerMenuPic.setAttribute("src", "../images/icon-hamburger.svg");
+        _headerMenuPic.setAttribute("src", "images/icon-hamburger.svg");
     }
 
     function showMenu() {
-        _headerList.style.display = "block";
+        _headerList.style.display = "flex";
     }
 
     function hideMenu() {
