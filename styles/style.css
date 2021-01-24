@@ -37,7 +37,7 @@ body::after {
     background-repeat: no-repeat;
     background-position: 135% 55%;
     background-size: 62%;
-
+    z-index: -2;
 }
 
 .header {
@@ -66,6 +66,10 @@ body::after {
     color: inherit;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.header__link:hover {
+    text-decoration: underline;
 }
 
 .header__item--dim {
@@ -131,6 +135,11 @@ body::after {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 200ms ease-out;
+}
+
+.hero__schedule:hover {
+    background-color: hsl(0, 100%, 75%);
 }
 
 .hero__more {
