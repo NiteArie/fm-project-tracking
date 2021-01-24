@@ -25,10 +25,10 @@ const app = (() => {
     }
 
     function showMenu() {
-        _headerList.style.display = "flex";
+        _headerList.classList.add("show");
     }
 
     function hideMenu() {
-        _headerList.style.display = "none";
+        _headerList.classList.remove("show");
     }
 })();

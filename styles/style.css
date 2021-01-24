@@ -215,6 +215,11 @@ body::after {
         transform: translate(-50%, 70%);
     }
 
+    .header__list.show {
+        display: flex;
+    }
+
+
     .header__item {
         padding: 15px;
         text-align: center;
