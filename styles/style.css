@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 50px 100px;
+    font-family: "Barlow", sans-serif;
+    color: hsl(230, 29%, 20%);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.header__item {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header__item--dim {
+    list-style: disc;
+    padding-left: 20px;
+    color: hsl(231, 7%, 65%);
+}
+
