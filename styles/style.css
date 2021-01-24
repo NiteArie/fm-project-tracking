@@ -11,6 +11,8 @@ body {
     font-family: "Barlow", sans-serif;
     color: hsl(230, 29%, 20%);
     font-size: 18px;
+    overflow-x: hidden;
+    transition: all 200ms ease-out;
 }
 
 
@@ -38,6 +40,7 @@ body::after {
     background-position: 135% 55%;
     background-size: 62%;
     z-index: -2;
+    transition: all 300ms ease-out;
 }
 
 .header {
@@ -82,7 +85,9 @@ body::after {
 
 .hero {
     margin: 130px 0;
+    transition: all 200ms ease-out;
 }
+
 
 .hero__new {
     padding: 5px;
@@ -160,4 +165,40 @@ body::after {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media all and (max-width: 1080px) {
+    body::after {
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-position: 50% 30%;
+        background-size: 80%;
+    }
+
+    .hero {
+        margin: 450px auto 40px;
+        max-width: 600px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    body {
+        padding: 40px;
+    }
+
+    .hero {
+        margin-top: 370px;
+    }
+
+    .hero__title {
+        font-size: 54px;
+    }
+
+    .hero__desc {
+        margin-bottom: 20px;
+    }
 }
