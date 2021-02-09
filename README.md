@@ -10,6 +10,10 @@ Live Preview: [https://nitearie.github.io/fm-project-tracking/](https://nitearie
 
 ![Desktop Design](./design/desktop-design.jpg)
 
+> Desktop Active State
+
+![Desktop Active State](./design/active-states.jpg)
+
 > Mobile
 
 ![Mobile Design](./design/mobile-design.jpg)
